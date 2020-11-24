@@ -32,7 +32,7 @@ spec:
         startupProbe:
           httpGet:
             path: /
-            port: health-port
+            port: ui-port
           periodSeconds: 10
           failureThreshold: 5
 ---
