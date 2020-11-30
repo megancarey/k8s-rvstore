@@ -9,7 +9,7 @@ spec:
   ports:
   - protocol: TCP
     port: 80
-  type: LoadBalancer
+    nodePort: 30080
 ---
 kind: Service
 apiVersion: v1
@@ -59,4 +59,4 @@ spec:
   ports:
   - protocol: TCP
     port: 9000
-  type: LoadBalancer
+    nodePort: 30090
